@@ -1,3 +1,6 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -13,6 +16,26 @@
 ul{
   list-style: none;
 }
+
+.align{
+ border: 1px solid rgba(225, 225, 225, 0.1); 
+ grid-template-columns: repeat(3, 1fr);
+ border-radius: 4px;
+ background: rgba(105, 113, 128, 0.1);
+ display: grid;
+ padding: 0px;
+ width: 100%;
+}
+.box{
+ text-align: center;   
+ width: 100%;
+ margin: 0 auto;
+ padding: 15px;
+ font-weight: 400;
+ border-left: 1px solid rgba(255, 255, 255, 0.1);
+ cursor: pointer;
+}
+
 li{
   background-color: #292C31;
   padding: 30px;
@@ -26,37 +49,13 @@ li{
 }
 .final-result{
   margin: 50px auto;
+  padding: 10px;
   background-color: #222529;
   border-radius: 15px;
   color: aliceblue;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
-.flex{
-  box-sizing: border-box;
-  background-color: rgb(24, 26, 29);
-  bottom: 0px;
-  position: sticky;
-  -webkit-box-pack: center;
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem 0px;
-  box-shadow: inset 0px 0px 0px 5px teal;
-}
-.around{
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    gap: 1rem;
-}
-
 button{
   background-color: #1f1919;
   border: none;

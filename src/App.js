@@ -2,9 +2,52 @@ import React, { useState } from "react";
 import './App.css';
 
 function App() {
-// properties
 
-  const [showFinalResults, setFinalResult] = useState(false);
+// properties
+const [showFinalResults, setFinalResult] = useState(false);
+const [currentQuestion, setCurrentQuestion] = useState(0);
+
+const questions = [{
+       text: "Which types of workouts are your favorites?",
+       options: [
+            {id: 0, text: "Strength"},
+            {id: 1, text: "Yoga"},
+            {id: 2, text: "Meditation"},
+            {id: 3, text: "Stretching"}
+        ],
+    },
+    {
+        text: "What’s your experience level?",
+        options: [
+            {id: 0, text: "Beginner"},
+            {id: 1, text: "Intermediate"},
+            {id: 2, text: "Advanced"}
+        ],
+    },
+    {
+        text: "How long are your workouts?",
+        options: [
+            { id: 0, text: "5-20 mins"},
+            { id: 1, text: "20-30 mins"},
+            { id: 2, text: "30-40 mins"}
+        ],
+    },
+    {
+        text: "What workout accessories do you have available to use?",
+        options: [
+            {id: 0, text: "Light dumbbells"},
+            {id: 1, text: "Medium dumbbells"},
+            {id: 2, text: "Heavy dumbbells"},
+            {id: 3, text: "Resistance bands"},
+            {id: 4, text: "Workout mats"},
+            {id: 5, text: "Yoga mats"},
+            {id: 6, text: "Yoga blocks"},
+            {id: 7, text: "Foam roller"},
+            {id: 8, text: "None"}
+        ],
+    },
+  ]
+
 
    return (
     <div className="App">
@@ -20,63 +63,25 @@ function App() {
            </div>
    ) : (
       <div className='question-card'> 
+
       {/* Question No*/}
-      <h5>Question 1 0f 5</h5>
+      <h5>Question {currentQuestion + 1 } 0f {questions.length}</h5>
+
        {/* Questions*/}
-     <h3 className='question-text'>Which types of workouts are your favorites?</h3>
+     <h3 className='question-text'>{questions[currentQuestion].text}</h3>
      <ul>
-       <li>Strength </li>
-       <li>Yoga</li>
-       <li>Meditation</li>
-       <li>Stretching</li>
+      {questions[currentQuestion].options.map((option) => {
+        return (
+          <li onClick={() => optionClicked(option)}  key={option.id}>{option.text}</li>
+        );
+      })}
      </ul>
-     <h3 className='question-text'>What’s your experience level?</h3>
-     <ul className="align">
-       {/* <li>Beginner </li>
-       <li>Intermediate</li>
-       <li>Advanced</li> */}
-        <span className="box">Beginner</span>
-        <span className="box">Intermediate</span>
-        <span className="box">Advanced</span>
-     </ul>
-     {/* <div className="questionno2">
-     <span className="box">Beginner</span>
-     <span className="box">Intermediate</span>
-     <span className="box">Advanced</span>
-     </div> */}
-  
-     <h3 className='question-text'>How long are your workouts?</h3>
-     <ul>
-       <li>5-20 mins</li>
-       <li>20-30 mins</li>
-       <li>30-40 mins</li>
-     </ul>
-     <h3 className='question-text'>What workout accessories do you have available to use?</h3>
-     <ul>
-       <li>Light dumbbells </li>
-       <li>Medium dumbbells</li>
-       <li>Heavy dumbbells</li>
-       <li>Resistance bands</li>
-       <li>Workout mats</li>
-       <li>Yoga mats</li>
-       <li>Yoga blocks</li>
-       <li>Yoga strap</li>
-       <li>Foam roller</li>
-       <li>None</li>
-       <button>Back</button>
-       <button>Find Classes</button>
-</ul>
-     {/* Button Next and back */}
-     <button>Back</button>
-     <button>Next</button>
-     </div> 
-      
-     ) }
-      
-   
-     
-    
-   </div>
+   {/* Button Next and back */}
+      <button>Back</button>
+     <button >Next</button>
+    </div> 
+  )}
+  </div>
   );
 }
 export default App;

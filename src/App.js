@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 
+
 // function App() {
 
 // // properties
@@ -86,10 +87,10 @@ import './App.css';
 function App() {
 
   // properties
-  const [btnClass, setBtnClass] = useState(false);
   const [showFinalResults, setFinalResult] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  
+  const [isActive, setIsActive] = useState(false);
+
   const questions = [{
          text: "Which types of workouts are your favorites?",
          options: [
@@ -150,7 +151,9 @@ function App() {
       setCurrentQuestion(0);
       setFinalResult(false);
   }
-  
+  const handleClick = () => {
+    setIsActive(current => !current);
+  }
   return (
       <div className="App">
         {showFinalResults ? (
@@ -169,16 +172,17 @@ function App() {
         <h5>Question {currentQuestion + 1 } 0f {questions.length}</h5>
           {/* Questions*/}
        <h3 className='question-text'>{questions[currentQuestion].text}</h3>
-       <div className="onclick">
+       <div>
        <ul>
-        {questions[currentQuestion].options.map((option) => {
+         {questions[currentQuestion].options.map((option) => {
           return (
-            <li onClick={() => {
-              btnClass ? setBtnClass(false) : setBtnClass(true);
-            }}
-            className={btnClass ? "btnClass clicked" : "btnClass"}
-            key={option.id}>{option.text}</li>
-          );
+           <li style={{
+            backgroundColor: isActive ? 'salmon' : '',
+            color: isActive ? 'white' : '',
+          }}
+           onClick={handleClick}
+           key={option.id}>{option.text}</li>
+        );
         })}
        </ul></div>
      {/* Button Next and back */}

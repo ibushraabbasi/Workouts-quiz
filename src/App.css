@@ -69,13 +69,3 @@ button{
   border-radius: 7px;
   color: #575b63;
 }
-button :hover{
-  
-}
-.btnClass {
-  background-color: red;
-}
-
-.btnClass.clicked {
-  background-color: green;
-}

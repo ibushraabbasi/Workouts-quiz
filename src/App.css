@@ -69,3 +69,31 @@ button{
   border-radius: 7px;
   color: #575b63;
 }
+
+input[type="radio"] {
+  visibility: hidden; /* 1 */
+  height: 0; /* 2 */
+  width: 0; /* 2 */
+}
+label {
+  display: flex;
+  flex: auto;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color-gray);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: color --transition-fast ease-out, 
+              background-color --transition-fast ease-in;
+  user-select: none;
+ margin-right: 8px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--color-dark-pink);
+  color: var(--color-black);
+}

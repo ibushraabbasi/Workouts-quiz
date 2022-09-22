@@ -89,7 +89,6 @@ function App() {
   // properties
   const [showFinalResults, setFinalResult] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(1);
-  const [isActive, setIsActive] = useState(false);
 
   const questions = [
     {
@@ -145,17 +144,14 @@ function App() {
     setCurrentQuestion(1);
     setFinalResult(false);
   }
-
-  const handleClick = () => {
-    setIsActive(current => !current);
-  }
-
+  // const handleClick = (e) => {
+  //   console.log('you clicked me')
+  //   console.log(e)
+  // }
   const onFinsh = () =>{
     setFinalResult(true);
-    
-  }
-
-  return (
+}
+ return (
     <div className="App">
       {showFinalResults ? 
         <div className='final-result'>
@@ -173,27 +169,25 @@ function App() {
           <div>
               {questions[currentQuestion-1].options.map((option) => {
                 return (
-                  <li style={{
-                    backgroundColor: isActive ? 'salmon' : '',
-                    color: isActive ? 'white' : '',
-                  }}
-                  onClick={handleClick}
-                  key={option.id}>{option.text}</li>
-                );
+                <button className="button2"
+                      onClick={() => console.log("hello")}
+                      key={option.id}>{option.text}
+                    </button>
+               );
               })}
                </div>
-
-          <button 
+     <span><button 
             onClick = {handlebackButtonClick}
             disabled={currentQuestion===1?true:false}
           >
             Back
-          </button>
+          </button></span> 
 
           {currentQuestion===questions.length?
-            <button onClick={() => onFinsh()}>Finsh</button>
+           <span><button onClick={() => onFinsh()}>Finsh</button></span> 
             :
-            <button onClick={() => handleAnswerButtonClick()}>Next</button>
+           <span><button onClick={() => handleAnswerButtonClick() 
+          }>Next</button></span> 
           }
         </div> 
       }

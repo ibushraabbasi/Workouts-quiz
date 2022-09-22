@@ -1,6 +1,21 @@
 *, :after, :before {
   box-sizing: border-box;
 }
+:root {
+  --color-black: #232323;
+  --color-pink: #ff6393;
+  --color-dark-pink: #df4775;
+  --color-purple: #342a47;
+  --color-blue: deepskyblue;
+  --color-gray: #525252;
+  --color-green: #bbe187;
+  
+  --transition-fast: 0.1s;
+ }
+ .body{
+  background: coral;
+  height:100vh;
+}
 .App {
   text-align: center;
 }
@@ -16,7 +31,6 @@
 ul{
   list-style: none;
 }
-
 .align{
  border: 1px solid rgba(225, 225, 225, 0.1); 
  grid-template-columns: repeat(3, 1fr);
@@ -35,8 +49,7 @@ ul{
  border-left: 1px solid rgba(255, 255, 255, 0.1);
  cursor: pointer;
 }
-
-li{
+.button2{
   background-color: #292C31;
   padding: 30px;
   margin: 8px 8px 8px 8px;
@@ -46,6 +59,7 @@ li{
   cursor: pointer;
   width: 18%;
   border-radius: 7px;
+  color: white;
 }
 .final-result{
   margin: 50px auto;
@@ -68,32 +82,4 @@ button{
   width: 15%;
   border-radius: 7px;
   color: #575b63;
-}
-
-input[type="radio"] {
-  visibility: hidden; /* 1 */
-  height: 0; /* 2 */
-  width: 0; /* 2 */
-}
-label {
-  display: flex;
-  flex: auto;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-  background-color: var(--color-gray);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 6px;
-  transition: color --transition-fast ease-out, 
-              background-color --transition-fast ease-in;
-  user-select: none;
- margin-right: 8px;
-}
-
-input[type="radio"]:checked + label {
-  background-color: var(--color-dark-pink);
-  color: var(--color-black);
 }

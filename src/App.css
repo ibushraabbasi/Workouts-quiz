@@ -1,4 +1,4 @@
-*, :after, :before {
+* :after, :before {
   box-sizing: border-box;
 }
 :root {
@@ -61,6 +61,13 @@ ul{
   border-radius: 7px;
   color: white;
 }
+
+.button2:hover,
+.button2:focus{
+ background-color: white;
+ color: #1f1919;
+}
+
 .final-result{
   margin: 50px auto;
   padding: 10px;
@@ -81,5 +88,12 @@ button{
   cursor: pointer;
   width: 15%;
   border-radius: 7px;
-  color: #575b63;
+  color: rgb(241, 237, 237);
+}
+
+.backbtn:hover,
+.backbtn:focus{
+ background-color: #FF9494;
+ color: rgb(247, 243, 243);
+ font-weight: bold;
 }

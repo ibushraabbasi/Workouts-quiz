@@ -7,14 +7,20 @@ function App() {
   const [showFinalResults, setFinalResult] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [redcolor, setredColor] = useState("");
-//  const [data, setData] = useState([]);
-//  const [url, setUrl] = useState('http://localhost:3000/list')
+  const [queOne, setQueOne] = useState("");
+  const [queTwo, setQueTwo] = useState("");
+  const [queThree, setQueThree] = useState("");
+  const [queFour, setQueFour] = useState("");
 
-  // useEffect(() => {
-  //   fetch(url)
-  //   .then(res => res.json())
-  //   .then(json => setData(json))
-  // }, [url])
+  // For db.json data
+ const [data, setData] = useState([]);
+ const [url, setUrl] = useState('http://localhost:3000/list')
+
+  useEffect(() => {
+    fetch(url)
+    .then(res => res.json())
+    .then(json => setData(json))
+  }, [url])
 
 // console.log(data);
 
@@ -22,7 +28,7 @@ function App() {
     {
       text: "Which types of workouts are your favorites?",
       options: [
-        { id: 0, text: "Indoor running" },
+        { id: 0, text: "Indoor Walking" },
         { id: 1, text: "Sculpting" },
         { id: 2, text: "Meditation" },
         { id: 3, text: "Stretching" },
@@ -61,16 +67,17 @@ function App() {
       ],
     },
   ];
-  const found = () => {
-    questions.find(obj => {
-      return obj.options;
-    });
+  // to store the selected options
+  const found = (option) => {
+    let array = [""]
+    array.push(option)
+    console.log(option)
   }
-  console.log(found);
-
-// console.log(Object.values(questions));
-
-
+  //compare four selected cards
+  useEffect(() => {
+    
+  },[])
+  
   const handleAnswerButtonClick = () => {
     setCurrentQuestion(currentQuestion + 1);
     setredColor("")
@@ -127,7 +134,7 @@ return (
                 <button
                   className="button2"
                   onClick={() => {
-                    handleClick();  found();
+                    handleClick();  found(option);
                   }}
                     key={option.id}
                 >

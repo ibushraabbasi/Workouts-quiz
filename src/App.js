@@ -1,28 +1,22 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import  {useFetch}  from '../src/hooks/useFetch'
 
 function App() {
   // properties
   const [showFinalResults, setFinalResult] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [redcolor, setredColor] = useState("");
-  const [queOne, setQueOne] = useState("");
-  const [queTwo, setQueTwo] = useState("");
-  const [queThree, setQueThree] = useState("");
-  const [queFour, setQueFour] = useState("");
+  const [readyData, setReadyData]= useState({
+    question1: {},
+    question2: {},
+    question3: {},
+    question4: {}
+  });
 
   // For db.json data
- const [data, setData] = useState([]);
  const [url, setUrl] = useState('http://localhost:3000/list')
-
-  useEffect(() => {
-    fetch(url)
-    .then(res => res.json())
-    .then(json => setData(json))
-  }, [url])
-
-// console.log(data);
+const { data } = useFetch(url)
 
   const questions = [
     {
@@ -39,45 +33,86 @@ function App() {
     {
       text: "What’s your experience level?",
       options: [
-        { id: 0, text: "Beginner" },
-        { id: 1, text: "Intermediate" },
-        { id: 2, text: "Advanced" },
+        { id: 0, text: "Beginner" ,matched:false} ,
+        { id: 1, text: "Intermediate" ,matched:false},
+        { id: 2, text: "Advanced" ,matched:false},
       ],
     },
     {
       text: "How long are your workouts?",
       options: [
-        { id: 0, text: "5-20 mins" },
-        { id: 1, text: "20-30 mins" },
-        { id: 2, text: "30-40 mins" },
+        { id: 0, text: "5-20 mins" ,matched:false},
+        { id: 1, text: "20-30 mins" ,matched:false},
+        { id: 2, text: "30-40 mins" ,matched:false},
       ],
     },
     {
       text: "What workout accessories do you have available to use?",
       options: [
-        { id: 0, text: "Light dumbbells" },
-        { id: 1, text: "Medium dumbbells" },
-        { id: 2, text: "Heavy dumbbells" },
-        { id: 3, text: "Resistance bands" },
-        { id: 4, text: "Workout mats" },
-        { id: 5, text: "Yoga mats" },
-        { id: 6, text: "Yoga blocks" },
-        { id: 7, text: "Foam roller" },
-        { id: 8, text: "None" },
+        { id: 0, text: "Light dumbbells" ,matched:false},
+        { id: 1, text: "Medium dumbbells" ,matched:false},
+        { id: 2, text: "Heavy dumbbells" ,matched:false},
+        { id: 3, text: "Resistance bands" ,matched:false},
+        { id: 4, text: "Workout mats" ,matched:false},
+        { id: 5, text: "Yoga mats" ,matched:false},
+        { id: 6, text: "Yoga blocks" ,matched:false},
+        { id: 7, text: "Foam roller" ,matched:false},
+        { id: 8, text: "None" ,matched:false},
       ],
     },
   ];
   // to store the selected options
   const found = (option) => {
-    let array = [""]
-    array.push(option)
-    console.log(option)
+    switch(currentQuestion) {
+      case 1:
+        setReadyData((prevState) => 
+        ({
+          ...prevState,
+          question1: option
+        }));
+        break;
+      case 2:
+        setReadyData((prevState) => 
+        ({
+          ...prevState,
+          question2: option
+        }));
+        break;
+      case 3:
+        setReadyData((prevState) => 
+        ({
+          ...prevState,
+          question3: option
+        }));
+        break;
+      case 4:
+        setReadyData((prevState) => 
+        ({
+          ...prevState,
+          question4: option
+        }));
+        break;
+    }
   }
-  //compare four selected cards
-  useEffect(() => {
-    
-  },[])
-  
+//compare four selected cards
+useEffect(() => {
+    if(readyData && url){
+    if(readyData.text === data){
+      setFinalResult(prevState => {
+        return prevState.map(state =>{
+          if(state.text === data){
+             return {...state, matched:true}
+          } else {
+            return state
+          }
+        })
+      })
+      
+    } 
+    }
+  },[readyData, data])
+console.log(data)
+
   const handleAnswerButtonClick = () => {
     setCurrentQuestion(currentQuestion + 1);
     setredColor("")
@@ -108,12 +143,14 @@ return (
             interest you.
           </p>
           <div className="filter">
-            {/* {" "}
-            <iframe
-              height="480"
-              width="500"
-              src="https://www.youtube.com/embed/4C-gxOE0j7s"
-            ></iframe>{" "} */}
+            <ul>
+              {data.map(urrl =>(
+                <li key={urrl.id}>
+                  <p></p>
+                  <iframe  X-frame-Options = 'same orgins' src={urrl.videos}/>
+                </li>
+              ))}
+            </ul>
           </div>
           <span>
             <button onClick={() => restartQuiz()}>Restart Quiz</button>

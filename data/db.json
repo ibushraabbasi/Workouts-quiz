@@ -6,7 +6,7 @@
          "experience": "Beginner",
          "duration": "5-20 Minutes",
          "accessories": "Yoga Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=sAapLQCASOE"
+         "videos": "https://www.youtube.com/embed/sAapLQCASOE"
         },
         {
          "id": 1,
@@ -14,7 +14,7 @@
          "experience": "Intermediate",
          "duration": "20-30 Minutes",
          "accessories": "Medium Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=g_tea8ZNk5A"
+         "videos": "https://www.youtube.com/embed/g_tea8ZNk5A"
         },
         {
          "id": 2,
@@ -23,7 +23,7 @@
          "experience": "Beginner",
          "duration": "30-45 Minutes",
          "accessories": "Yoga Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=Eml2xnoLpYE"
+         "videos": "https:www.youtube.com/embed/Eml2xnoLpYE"
         },
         {
          "id": 3,
@@ -31,7 +31,7 @@
          "experience": "Beginner",
          "duration": "90+ Minutes",
          "accessories": "Yoga Blocks",
-         "videos": "https:\/\/www.youtube.com\/watch?v=sAapLQCASOE"
+         "videos": "https:www.youtube.com/embed/sAapLQCASOE"
         },
         {
          "id": 4,
@@ -39,7 +39,7 @@
          "experience": "Intermediate",
          "duration": "45-60 Minutes",
          "accessories": "Workout Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=sTANio_2E0Q&t=3s"
+         "videos": "https:www.youtube.com/embed/sTANio_2E0Q&t=3s"
         },
         {
          "id": 5,
@@ -47,7 +47,7 @@
          "experience": "Intermediate",
          "duration": "20-30 Minutes",
          "accessories": "Workout Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=g_tea8ZNk5A"
+         "videos": "https:www.youtube.com/embed/g_tea8ZNk5A"
         },
         {
          "id": 6,
@@ -55,7 +55,7 @@
          "experience": "Intermediate",
          "duration": "90+ Minutes",
          "accessories": "Medium Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=solO3M9L4ds"
+         "videos": "https:www.youtube.com/embed/solO3M9L4ds"
         },
         {
          "id": 7,
@@ -63,7 +63,7 @@
          "experience": "Advanced",
          "duration": "90+ Minutes",
          "accessories": "Yoga Strap",
-         "videos": "https:\/\/www.youtube.com\/watch?v=KxKJEIqS1HQ"
+         "videos": "https:www.youtube.com/embed/KxKJEIqS1HQ"
         },
         {
          "id": 8,
@@ -71,7 +71,7 @@
          "experience": "Beginner",
          "duration": "90+ Minutes",
          "accessories": "Yoga Blocks",
-         "videos": "https:\/\/www.youtube.com\/watch?v=KxKJEIqS1HQ"
+         "videos": "https:www.youtube.com/embed/KxKJEIqS1HQ"
         },
         {
          "id": 9,
@@ -79,7 +79,7 @@
          "experience": "Beginner",
          "duration": "45-60 Minutes",
          "accessories": "Resistance Bands",
-         "videos": "https:\/\/www.youtube.com\/watch?v=d6RgD-bT9X4"
+         "videos": "https:www.youtube.com/embed/d6RgD-bT9X4"
         },
         {
          "id": 10,
@@ -87,7 +87,7 @@
          "experience": "Beginner",
          "duration": "45-60 Minutes",
          "accessories": "Foam Roller",
-         "videos": "https:\/\/www.youtube.com\/watch?v=d6RgD-bT9X4"
+         "videos": "https:www.youtube.com/embed/d6RgD-bT9X4"
         },
         {
          "id": 11,
@@ -95,7 +95,7 @@
          "experience": "Intermediate",
          "duration": "45-60 Minutes",
          "accessories": "Yoga Blocks",
-         "videos": "https:\/\/www.youtube.com\/watch?v=ZiGE3-L4vyg"
+         "videos": "https:www.youtube.com/embed/ZiGE3-L4vyg"
         },
         {
          "id": 12,
@@ -103,7 +103,7 @@
          "experience": "Intermediate",
          "duration": "30-45 Minutes",
          "accessories": "None",
-         "videos": "https:\/\/www.youtube.com\/watch?v=QQtUdhDUTZo"
+         "videos": "https:www.youtube.com/embed/QQtUdhDUTZo"
         },
         {
          "id": 13,
@@ -111,7 +111,7 @@
          "experience": "Advanced",
          "duration": "90+ Minutes",
          "accessories": "Yoga Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=AjAVhtQ2vok"
+         "videos": "https:www.youtube.com/embed/AjAVhtQ2vok"
         },
         {
          "id": 14,
@@ -119,7 +119,7 @@
          "experience": "Beginner",
          "duration": "5-20 Minutes",
          "accessories": "Yoga Blocks",
-         "videos": "https:\/\/www.youtube.com\/watch?v=solO3M9L4ds"
+         "videos": "https:www.youtube.com/embed/solO3M9L4ds"
         },
         {
          "id": 15,
@@ -127,7 +127,7 @@
          "experience": "Advanced",
          "duration": "60-90 Minutes",
          "accessories": "Yoga Strap",
-         "videos": "https:\/\/www.youtube.com\/watch?v=AjAVhtQ2vok"
+         "videos": "https:www.youtube.com/embed/AjAVhtQ2vok"
         },
         {
          "id": 16,
@@ -135,7 +135,7 @@
          "experience": "Advanced",
          "duration": "90+ Minutes",
          "accessories": "Workout Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=rzutXI0Ogbo"
+         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
         },
         {
          "id": 17,
@@ -143,7 +143,7 @@
          "experience": "Intermediate",
          "duration": "5-20 Minutes",
          "accessories": "Resistance Bands",
-         "videos": "https:\/\/www.youtube.com\/watch?v=rzutXI0Ogbo"
+         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
         },
         {
          "id": 18,
@@ -151,7 +151,7 @@
          "experience": "Intermediate",
          "duration": "5-20 Minutes",
          "accessories": "Light Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=ml6cT4AZdqI"
+         "videos": "https:www.youtube.com/embed/ml6cT4AZdqI"
         },
         {
          "id": 19,
@@ -159,7 +159,7 @@
          "experience": "Advanced",
          "duration": "5-20 Minutes",
          "accessories": "Yoga Blocks",
-         "videos": "https:\/\/www.youtube.com\/watch?v=sTANio_2E0Q&t=3s"
+         "videos": "https:www.youtube.com/embed/sTANio_2E0Q&t=3s"
         },
         {
          "id": 20,
@@ -167,7 +167,7 @@
          "experience": "Intermediate",
          "duration": "5-20 Minutes",
          "accessories": "Medium Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=AjAVhtQ2vok"
+         "videos": "https:www.youtube.com/embed/AjAVhtQ2vok"
         },
         {
          "id": 21,
@@ -175,7 +175,7 @@
          "experience": "Advanced",
          "duration": "20-30 Minutes",
          "accessories": "Resistance Bands",
-         "videos": "https:\/\/www.youtube.com\/watch?v=rzutXI0Ogbo"
+         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
         },
         {
          "id": 22,
@@ -183,7 +183,7 @@
          "experience": "Intermediate",
          "duration": "60-90 Minutes",
          "accessories": "Yoga Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=ml6cT4AZdqI"
+         "videos": "https:www.youtube.com/embed/ml6cT4AZdqI"
         },
         {
          "id": 23,
@@ -191,7 +191,7 @@
          "experience": "Beginner",
          "duration": "45-60 Minutes",
          "accessories": "None",
-         "videos": "https:\/\/www.youtube.com\/watch?v=QQtUdhDUTZo"
+         "videos": "https:www.youtube.com/embed/QQtUdhDUTZo"
         },
         {
          "id": 24,
@@ -207,7 +207,7 @@
          "experience": "Advanced",
          "duration": "60-90 Minutes",
          "accessories": "Yoga Mat",
-         "videos": "https:\/\/www.youtube.com\/watch?v=rzutXI0Ogbo"
+         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
         },
         {
          "id": 26,
@@ -215,7 +215,7 @@
          "experience": "Intermediate",
          "duration": "90+ Minutes",
          "accessories": "None",
-         "videos": "https:\/\/www.youtube.com\/watch?v=sTANio_2E0Q&t=3s"
+         "videos": "https:www.youtube.com/embed/sTANio_2E0Q&t=3s"
         },
         {
          "id": 27,
@@ -224,7 +224,7 @@
          "experience": "Beginner",
          "duration": "30-45 Minutes",
          "accessories": "Medium Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=g_tea8ZNk5A"
+         "videos": "https:www.youtube.com/embed/g_tea8ZNk5A"
         },
         {
          "id": 28,
@@ -232,7 +232,7 @@
          "experience": "Beginner",
          "duration": "90+ Minutes",
          "accessories": "None",
-         "videos": "https:\/\/www.youtube.com\/watch?v=ZiGE3-L4vyg"
+         "videos": "https:www.youtube.com/embed/ZiGE3-L4vyg"
         },
         {
          "id": 29,
@@ -240,7 +240,7 @@
          "experience": "Intermediate",
          "duration": "60-90 Minutes",
          "accessories": "Medium Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=d6RgD-bT9X4"
+         "videos": "https://www.youtube.com/embed/d6RgD-bT9X4"
         }
        ]
 }

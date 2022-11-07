@@ -10,17 +10,17 @@ function App() {
   const [showFinalResults, setFinalResult] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [redcolor, setredColor] = useState("");
-  const [readyData, setReadyData]= useState({
-    question1: {},
-    question2: {},
-    question3: {},
-    question4: {}
+  const [answers, setAnswers]= useState({
+    workout: "",
+    experience: "",
+    duration: "",
+    accessories: ""
   });
 
   // For db.json data
-//  const [url, setUrl] = useState('http://localhost:3000/list')
-  //  const { data } = useFetch(url)
-   const data = dbase.list
+  // const [url, setUrl] = useState('http://localhost:3000/list')
+  // const { data } = useFetch(url)
+  const data = dbase.list
     
   const questions = [
     {
@@ -65,55 +65,49 @@ function App() {
       ],
     },
   ];
+  
   // to store the selected options
   const found = (option) => {
     switch(currentQuestion) {
       case 1:
-        setReadyData((prevState) => 
+        setAnswers((prevState) => 
         ({
           ...prevState,
-          question1: option
+          workout: option.workout
         }));
         break;
       case 2:
-        setReadyData((prevState) => 
+        setAnswers((prevState) => 
         ({
           ...prevState,
-          question2: option
+          experience: option.experience
         }));
         break;
       case 3:
-        setReadyData((prevState) => 
+        setAnswers((prevState) => 
         ({
           ...prevState,
-          question3: option
+          duration: option.duration
         }));
         break;
       case 4:
-        setReadyData((prevState) => 
+        setAnswers((prevState) => 
         ({
           ...prevState,
-          question4: option
+          accessories: option.accessories
         }));
         break;
     }
   }
-//compare four selected cards
-useEffect(() => {
-    if(readyData && data){
-      if(JSON.stringify(readyData.workout) === JSON.stringify(data.workout)){
-        console.log("match")
-      } else{
-        console.log("not matched")
-      }
-    } 
-  },[readyData, data])
-  console.log(readyData, data)
+
+  useEffect(() => {  
+    console.log("answers",answers)
+  },[answers])
 
   const handleAnswerButtonClick = () => {
     setCurrentQuestion(currentQuestion + 1);
     setredColor("")
-};
+  };
 
   const handlebackButtonClick = () => {
     setCurrentQuestion(currentQuestion - 1);
@@ -123,14 +117,17 @@ useEffect(() => {
     setCurrentQuestion(1);
     setFinalResult(false);
   };
+
   const handleClick = (e) => {
     setredColor("#FF9494")
   };
+
   const onFinsh = () => {
     setFinalResult(true);
     setredColor("#FF9494")
-};
-return (
+  };
+
+  return (
     <div className="App">
       {showFinalResults ? (
         <div className="final-result">

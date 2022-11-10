@@ -1,6 +1,6 @@
 /* eslint-disable default-case */
 /* eslint-disable jsx-a11y/iframe-has-title */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 // import  {useFetch}  from '../src/hooks/useFetch'
 import dbase from "../src/data/db.json"
@@ -10,6 +10,7 @@ function App() {
   const [showFinalResults, setFinalResult] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [redcolor, setredColor] = useState("");
+  const [urls, setUrls]= useState([]);
   const [answers, setAnswers]= useState({
     workout: "",
     experience: "",
@@ -99,9 +100,9 @@ function App() {
         break;
     }
   }
-  useEffect(() => {  
-    console.log("answers",answers, data)
-  },[answers, data])
+  // useEffect(() => {  
+  //   console.log("answers",answers, data)
+  // },[answers, data])
 
   const handleAnswerButtonClick = () => {
     setCurrentQuestion(currentQuestion + 1);
@@ -130,13 +131,15 @@ function App() {
   //match function
   // eslint-disable-next-line array-callback-return
   const comparsionAnswer = () => {
-    data.map((item) => {
-      if(item.workout === answers.workout &&
-         item.experience === answers.experience &&
-         item.duration === answers.duration &&
-         item.accessories === answers.accessories){
-      } return("item",item)
-     })
+    for (let i = 0; i < data.length; i++) {
+      const item = data[i] 
+      if (item.workout === answers.workout &&
+        item.experience === answers.experience &&
+        item.duration === answers.duration &&
+        item.accessories === answers.accessories) {
+          setUrls(oldArray => [...oldArray, item.videos])
+      }
+    }
   }
   return (
     <div className="App">
@@ -149,10 +152,10 @@ function App() {
           </p>
           <div className="filter">
             <ul>
-              {data.map(urrl =>(
-                <li key={urrl.id}>
+              {urls.map((item,index) =>(
+                <li key={index}>
                   {/* <p>{found.videos}</p> */}
-                  <iframe src={urrl.videos}/>
+                  <iframe src={item}/>
                 </li>
               ))}
             </ul>

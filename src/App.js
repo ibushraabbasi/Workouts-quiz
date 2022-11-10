@@ -35,7 +35,7 @@ function App() {
       ],
     },
     {
-      text: "What’s your experience level?",
+      text: "What's your experience level?",
       options: [
         { id: 0, experience: "Beginner" } ,
         { id: 1, experience: "Intermediate"},
@@ -45,22 +45,22 @@ function App() {
     {
       text: "How long are your workouts?",
       options: [
-        { id: 0, duration: "5-20 mins" },
-        { id: 1, duration: "20-30 mins" },
-        { id: 2, duration: "30-40 mins" },
+        { id: 0, duration: "5-20 Minutes" },
+        { id: 1, duration: "20-30 Minutes" },
+        { id: 2, duration: "30-45 Minutes" },
       ],
     },
     {
       text: "What workout accessories do you have available to use?",
       options: [
-        { id: 0, accessories: "Light dumbbells"},
-        { id: 1, accessories: "Medium dumbbells" },
-        { id: 2, accessories: "Heavy dumbbells" },
-        { id: 3, accessories: "Resistance bands" },
-        { id: 4, accessories: "Workout mats" },
-        { id: 5, accessories: "Yoga mats" },
-        { id: 6, accessories: "Yoga blocks" },
-        { id: 7, accessories: "Foam roller" },
+        { id: 0, accessories: "Light Dumbbells"},
+        { id: 1, accessories: "Medium Dumbbells" },
+        { id: 2, accessories: "Heavy Dumbbells" },
+        { id: 3, accessories: "Resistance Bands" },
+        { id: 4, accessories: "Workout Mat" },
+        { id: 5, accessories: "Yoga Mat" },
+        { id: 6, accessories: "Yoga Blocks" },
+        { id: 7, accessories: "Foam Roller" },
         { id: 8, accessories: "None" },
       ],
     },
@@ -99,10 +99,9 @@ function App() {
         break;
     }
   }
-
   useEffect(() => {  
-    console.log("answers",answers)
-  },[answers])
+    console.log("answers",answers, data)
+  },[answers, data])
 
   const handleAnswerButtonClick = () => {
     setCurrentQuestion(currentQuestion + 1);
@@ -125,8 +124,20 @@ function App() {
   const onFinsh = () => {
     setFinalResult(true);
     setredColor("#FF9494")
-  };
 
+  };
+  
+  //match function
+  // eslint-disable-next-line array-callback-return
+  const comparsionAnswer = () => {
+    data.map((item) => {
+      if(item.workout === answers.workout &&
+         item.experience === answers.experience &&
+         item.duration === answers.duration &&
+         item.accessories === answers.accessories){
+      } return("item",item)
+     })
+  }
   return (
     <div className="App">
       {showFinalResults ? (
@@ -186,8 +197,8 @@ function App() {
           </span>
            {currentQuestion === questions.length ? (
             <span>
-              <button onClick={() => 
-                onFinsh()} 
+              <button onClick={() => {
+                onFinsh() ; comparsionAnswer()}} 
                 style={{backgroundColor:redcolor}}>
                   Finsh
                   </button>

@@ -6,241 +6,87 @@
          "experience": "Beginner",
          "duration": "5-20 Minutes",
          "accessories": "Yoga Mat",
-         "videos": "https://www.youtube.com/embed/sAapLQCASOE"
+         "videos": "https://www.youtube.com/embed/-SSYX8sIOmM"
         },
         {
          "id": 1,
          "workout": "Stretching",
          "experience": "Intermediate",
          "duration": "20-30 Minutes",
-         "accessories": "Medium Dumbbells",
-         "videos": "https://www.youtube.com/embed/g_tea8ZNk5A"
+         "accessories": "Yoga Mat",
+         "videos": "https://www.youtube.com/embed/YELQ2Yeh19s"
         },
         {
          "id": 2,
-         "name": "Christopher Jordan",
          "workout": "Sculpting",
          "experience": "Beginner",
          "duration": "30-45 Minutes",
-         "accessories": "Yoga Mat",
-         "videos": "https:www.youtube.com/embed/Eml2xnoLpYE"
+         "accessories": "Light Dumbbells",
+         "videos": "https://www.youtube.com/embed/NkFaig2aiDo"
         },
         {
          "id": 3,
          "workout": "Cycling",
          "experience": "Beginner",
-         "duration": "90+ Minutes",
-         "accessories": "Yoga Blocks",
-         "videos": "https:www.youtube.com/embed/sAapLQCASOE"
+         "duration": "5-20 Minutes",
+         "accessories": "None",
+         "videos": "https://www.youtube.com/embed/Wd9VxqWxPuw"
         },
         {
          "id": 4,
          "workout": "Indoor Running",
          "experience": "Intermediate",
-         "duration": "45-60 Minutes",
-         "accessories": "Workout Mat",
-         "videos": "https:www.youtube.com/embed/sTANio_2E0Q&t=3s"
-        },
-        {
-         "id": 5,
-         "workout": "Indoor Running",
-         "experience": "Intermediate",
          "duration": "20-30 Minutes",
-         "accessories": "Workout Mat",
-         "videos": "https:www.youtube.com/embed/g_tea8ZNk5A"
+         "accessories": "None",
+         "videos": "https://www.youtube.com/embed/k5N3BqLHMKI"
         },
         {
          "id": 6,
-         "workout": "Tread Bootcamp",
-         "experience": "Intermediate",
+         "workout": "Stretching",
+         "experience": "Advanced",
          "duration": "90+ Minutes",
-         "accessories": "Medium Dumbbells",
-         "videos": "https:www.youtube.com/embed/solO3M9L4ds"
+         "accessories": "20-30",
+         "videos": "https://www.youtube.com/embed/950Hw7L7If8"
         },
         {
          "id": 7,
-         "workout": "Stretching",
-         "experience": "Advanced",
-         "duration": "90+ Minutes",
-         "accessories": "Yoga Strap",
-         "videos": "https:www.youtube.com/embed/KxKJEIqS1HQ"
+         "workout": "HIIT Cardio",
+         "experience": "Beginner",
+         "duration": "5-20 Minutes",
+         "accessories": "",
+         "videos": "https://www.youtube.com/embed/q2NZyW5EP5A"
         },
         {
          "id": 8,
-         "workout": "Indoor Walking",
-         "experience": "Beginner",
-         "duration": "90+ Minutes",
-         "accessories": "Yoga Blocks",
-         "videos": "https:www.youtube.com/embed/KxKJEIqS1HQ"
+         "workout": "Tread Bootcamp",
+         "experience": "Advanced",
+         "duration": "30-45 Minutes",
+         "accessories": "Workout Mat",
+         "videos": "https://www.youtube.com/embed/P0UsZrEvRcE"
         },
         {
          "id": 9,
-         "workout": "HIIT Cardio",
-         "experience": "Beginner",
-         "duration": "45-60 Minutes",
-         "accessories": "Resistance Bands",
-         "videos": "https:www.youtube.com/embed/d6RgD-bT9X4"
+         "workout": "Meditation",
+         "experience": "Advanced",
+         "duration": "5-20 Minutes",
+         "accessories": "Yoga Mat",
+         "videos": "https://www.youtube.com/embed/YaEAYvLJsoU"
         },
         {
          "id": 10,
-         "workout": "HIIT Cardio",
-         "experience": "Beginner",
-         "duration": "45-60 Minutes",
-         "accessories": "Foam Roller",
-         "videos": "https:www.youtube.com/embed/d6RgD-bT9X4"
+         "workout": "Meditation",
+         "experience": "Intermediate",
+         "duration": "20-30 Minutes",
+         "accessories": "Medium Dumbbells",
+         "videos": "https://www.youtube.com/embed/FZ-6i6gZawM"
         },
         {
          "id": 11,
-         "workout": "Cycling",
-         "experience": "Intermediate",
-         "duration": "45-60 Minutes",
-         "accessories": "Yoga Blocks",
-         "videos": "https:www.youtube.com/embed/ZiGE3-L4vyg"
-        },
-        {
-         "id": 12,
-         "workout": "Indoor Walking",
-         "experience": "Intermediate",
-         "duration": "30-45 Minutes",
-         "accessories": "None",
-         "videos": "https:www.youtube.com/embed/QQtUdhDUTZo"
-        },
-        {
-         "id": 13,
-         "workout": "Sculpting",
-         "experience": "Advanced",
-         "duration": "90+ Minutes",
-         "accessories": "Yoga Mat",
-         "videos": "https:www.youtube.com/embed/AjAVhtQ2vok"
-        },
-        {
-         "id": 14,
-         "workout": "Sculpting",
-         "experience": "Beginner",
-         "duration": "5-20 Minutes",
-         "accessories": "Yoga Blocks",
-         "videos": "https:www.youtube.com/embed/solO3M9L4ds"
-        },
-        {
-         "id": 15,
-         "workout": "Stretching",
-         "experience": "Advanced",
-         "duration": "60-90 Minutes",
-         "accessories": "Yoga Strap",
-         "videos": "https:www.youtube.com/embed/AjAVhtQ2vok"
-        },
-        {
-         "id": 16,
-         "workout": "Tread Bootcamp",
-         "experience": "Advanced",
-         "duration": "90+ Minutes",
-         "accessories": "Workout Mat",
-         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
-        },
-        {
-         "id": 17,
-         "workout": "Indoor Walking",
-         "experience": "Intermediate",
-         "duration": "5-20 Minutes",
-         "accessories": "Resistance Bands",
-         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
-        },
-        {
-         "id": 18,
-         "workout": "Indoor Walking",
-         "experience": "Intermediate",
-         "duration": "5-20 Minutes",
-         "accessories": "Light Dumbbells",
-         "videos": "https:www.youtube.com/embed/ml6cT4AZdqI"
-        },
-        {
-         "id": 19,
          "workout": "Meditation",
          "experience": "Advanced",
          "duration": "5-20 Minutes",
-         "accessories": "Yoga Blocks",
-         "videos": "https:www.youtube.com/embed/sTANio_2E0Q&t=3s"
-        },
-        {
-         "id": 20,
-         "workout": "Meditation",
-         "experience": "Intermediate",
-         "duration": "5-20 Minutes",
-         "accessories": "Medium Dumbbells",
-         "videos": "https:www.youtube.com/embed/AjAVhtQ2vok"
-        },
-        {
-         "id": 21,
-         "workout": "Meditation",
-         "experience": "Advanced",
-         "duration": "20-30 Minutes",
-         "accessories": "Resistance Bands",
-         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
-        },
-        {
-         "id": 22,
-         "workout": "Strength",
-         "experience": "Intermediate",
-         "duration": "60-90 Minutes",
-         "accessories": "Yoga Mat",
-         "videos": "https:www.youtube.com/embed/ml6cT4AZdqI"
-        },
-        {
-         "id": 23,
-         "workout": "Stretching",
-         "experience": "Beginner",
-         "duration": "45-60 Minutes",
          "accessories": "None",
-         "videos": "https:www.youtube.com/embed/QQtUdhDUTZo"
-        },
-        {
-         "id": 24,
-         "workout": "Bike Bootcamp",
-         "experience": "Advanced",
-         "duration": "5-20 Minutes",
-         "accessories": "Medium Dumbbells",
-         "videos": "https:\/\/www.youtube.com\/watch?v=solO3M9L4ds"
-        },
-        {
-         "id": 25,
-         "workout": "Bike Bootcamp",
-         "experience": "Advanced",
-         "duration": "60-90 Minutes",
-         "accessories": "Yoga Mat",
-         "videos": "https:www.youtube.com/embed/rzutXI0Ogbo"
-        },
-        {
-         "id": 26,
-         "workout": "Indoor Running",
-         "experience": "Intermediate",
-         "duration": "90+ Minutes",
-         "accessories": "None",
-         "videos": "https:www.youtube.com/embed/sTANio_2E0Q&t=3s"
-        },
-        {
-         "id": 27,
-         "name": "Amber Cole",
-         "workout": "Meditation",
-         "experience": "Beginner",
-         "duration": "30-45 Minutes",
-         "accessories": "Medium Dumbbells",
-         "videos": "https:www.youtube.com/embed/g_tea8ZNk5A"
-        },
-        {
-         "id": 28,
-         "workout": "Tread Bootcamp",
-         "experience": "Beginner",
-         "duration": "90+ Minutes",
-         "accessories": "None",
-         "videos": "https:www.youtube.com/embed/ZiGE3-L4vyg"
-        },
-        {
-         "id": 29,
-         "workout": "Indoor Running",
-         "experience": "Intermediate",
-         "duration": "60-90 Minutes",
-         "accessories": "Medium Dumbbells",
-         "videos": "https://www.youtube.com/embed/d6RgD-bT9X4"
+         "videos": "https://www.youtube.com/embed/varUYdNp3fY"
         }
        ]
 }
